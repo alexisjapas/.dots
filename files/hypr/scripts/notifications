@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Launch mako with alt config
+# dependencies: mako
+
+CONFIG="$HOME/.config/hypr/mako/config"
+
+if [[ ! `pidof mako` ]]; then
+	mako --config ${CONFIG}
+fi

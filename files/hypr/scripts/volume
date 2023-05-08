@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+
+# Script To Manage Speaker Volume For Arch, wayland, pactl
+
+# Get Volume
+get_volume() {
+	echo "` pactl get-sink-volume @DEFAULT_SINK@ | awk '/front-right/ {gsub("%", "", $5); print $5}'`"
+}
+
+# Increase Volume
+inc_volume() {
+	pactl set-sink-volume @DEFAULT_SINK@ +10%
+}
+
+# Decrease Volume
+dec_volume() {
+	pactl set-sink-volume @DEFAULT_SINK@ -10%
+}
+
+# Toggle Mute
+toggle_mute() {
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
+}
+
+# Toggle Mic
+toggle_mic() {
+	pactl set-source-mute @DEFAULT_SOURCE@ toggle
+}
+
+# Execute accordingly
+if [[ -x `which pactl` ]]; then
+	if [[ "$1" == "--get" ]]; then
+		get_volume
+	elif [[ "$1" == "--inc" ]]; then
+		inc_volume
+	elif [[ "$1" == "--dec" ]]; then
+		dec_volume
+	elif [[ "$1" == "--toggle" ]]; then
+		toggle_mute
+	elif [[ "$1" == "--toggle-mic" ]]; then
+		toggle_mic
+	else
+		echo $(get_volume)%
+	fi
+else
+	${notify_cmd} "'pactl' is not installed."
+fi
