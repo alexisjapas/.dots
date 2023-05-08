@@ -1,6 +1,9 @@
 # bash
-rm ~/.bashrc
-ln -s ~/.dots/files/bash/.bashrc ~/.bashrc
+ln -sf ~/.dots/files/bash/.bashrc ~/.bashrc
+ln -sf ~/.dots/files/bash/.bash_aliases ~/.bash_aliases
+ln -sf ~/.dots/files/bash/.al-prompt.sh ~/.al-prompt.sh
+ln -sf ~/.dots/files/bash/.git-prompt.sh ~/.git-prompt.sh
 
-rm ~/.bash_aliases
-ln -s ~/.dots/files/bash/.bash_aliases ~/.bash_aliases
+# vim
+ln -sf ~/.dots/files/vim/.vimrc ~/.vimrc
+ln -sf ~/.dots/files/vim/.vimspector.json ~/.vimspector.json

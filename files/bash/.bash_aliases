@@ -1,7 +1,3 @@
-#
-# ~/.bash_aliases
-#
-
 # display
 alias ls='ls --color=auto'
 alias t="tree -C -I '__pycache__'"
