@@ -8,6 +8,7 @@ alias br="vim ~/.bashrc"
 alias ba="vim ~/.bash_aliases"
 alias vv="vim ~/.vimrc"
 alias ch="cd ~/.config/hypr ; vim ."
+alias dots="cd ~/.dots"
 
 # miscellaneous
 alias please="sudo"
