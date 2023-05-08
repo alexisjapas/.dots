@@ -1,0 +1,32 @@
+name: Test dotfiles installation script
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@main
+
+    - name: Test dotfiles installation script
+      run: |
+        missing_files=""
+        while read f; do
+          f="$(basename "$f")"
+          grep -qF "$f" install.sh || missing_files="$missing_files $f"
+        done < <(find files -type f)
+        if [[ -n "$missing_files" ]]; then
+          echo "The following dotfiles are missing from install.sh:$missing_files"
+          exit 1
+        else
+          echo "All dotfiles are included in install.sh"
+          exit 0
+        fi
