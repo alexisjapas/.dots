@@ -7,8 +7,8 @@
         "format": "{icon}",
         "format-icons": ["󰛩", "󱩎", "󱩏", "󱩐", "󱩑", "󱩒", "󱩓", "󱩔", "󱩕", "󱩖", "󰛨"],
 		// Commands to execute on events
-        "on-scroll-up": "light -A 5%",
-        "on-scroll-down": "light -U 5%",
+        "on-scroll-up": "brightnessctl s +5%",
+        "on-scroll-down": "brightnessctl s 5%-",
         "smooth-scrolling-threshold": 1,
     },
     "backlight#2": {
@@ -16,8 +16,8 @@
         //"device": "amdgpu_bl0",
         "format": "{percent}%",
 		// Commands to execute on events
-        "on-scroll-up": "light -A 5%",
-        "on-scroll-down": "light -U 5%",
+        "on-scroll-up": "brightnessctl s +5%",
+        "on-scroll-down": "brightnessctl s 5%-",
         "smooth-scrolling-threshold": 1,
     },
 
