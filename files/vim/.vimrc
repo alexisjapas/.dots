@@ -195,10 +195,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'ycm-core/YouCompleteMe' " require: cmake, openjdk17-src, nodejs, npm, go
-Plugin 'cjrh/vim-conda'
 Plugin 'puremourning/vimspector'
 Plugin 'dense-analysis/ale'  " require: flake8
-Plugin 'iamcco/markdown-preview.nvim'
 
 " all of the plugins must be added before the following line
 call vundle#end()
