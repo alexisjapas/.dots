@@ -5,7 +5,7 @@
 		"interval": 2,
         //"device": "amdgpu_bl0",
         "format": "{icon}",
-        "format-icons": ["", "", "", "", "", "", ""],
+        "format-icons": ["󰛩", "󱩎", "󱩏", "󱩐", "󱩑", "󱩒", "󱩓", "󱩔", "󱩕", "󱩖", "󰛨"],
 		// Commands to execute on events
         "on-scroll-up": "light -A 5%",
         "on-scroll-down": "light -U 5%",
@@ -34,10 +34,10 @@
             "critical": 15
         },
         "format": "{icon}",
-        "format-charging": "",
-        "format-plugged": "ﮣ",
-        "format-full": "",
-        "format-icons": [],
+        "format-charging": "󰂄",
+        "format-plugged": "󰂄",
+        "format-full": "󰁹",
+        "format-icons": [ "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂" ],
         "format-time": "{H}h {M}min",
         "tooltip": true,
     },
@@ -76,7 +76,7 @@
 	// waybar-cpu
     "cpu": {
          "interval": 5,
-         "format": "",
+         "format": "",
     },
     "cpu#2": {
          "interval": 5,
@@ -85,13 +85,13 @@
            
 	// waybar-custom
     "custom/menu": {
-         "format": "",
+         "format": "CUSTOM MENU",
          "tooltip": false,
          "on-click": "$HOME/.config/hypr/scripts/menu",
     },
 
     "custom/power": {
-         "format": "襤",
+         "format": "CUSTOM POWER",
          "tooltip": false,
          "on-click": "$HOME/.config/hypr/scripts/wlogout",
     },
@@ -99,7 +99,7 @@
 	// waybar-disk
     "disk": {
          "interval": 30,
-         "format": "",
+         "format": "",
     },           	
     "disk#2": {
          "interval": 30,
@@ -109,68 +109,22 @@
 	// waybar-memory
     "memory": {
          "interval": 10,
-         "format": "",
+         "format": "󰍛",
     },
     "memory#2": {
          "interval": 10,
          "format": "{used:0.1f}G",
-    },
-           
-	// waybar-mpd
-    "mpd": {
-        "interval": 2,
-        "unknown-tag": "N/A",
-        "format": "{artist} - {title} | 祥 {elapsedTime:%M:%S}",
-        "format-disconnected": "Disconnected",
-        "format-paused": "{artist} - {title}",
-        "format-stopped": "Stopped",
-        "tooltip-format": "MPD (connected)",
-        "tooltip-format-disconnected": "MPD (disconnected)",
-		// Commands to execute on events
-        "on-click": "mpc toggle",
-        "on-scroll-up": "mpc seek +00:00:01",
-        "on-scroll-down": "mpc seek -00:00:01",
-        "smooth-scrolling-threshold": 1,
-    },
-    "mpd#2": {
-        "format": "玲",
-        "format-disconnected": "玲",
-        "format-paused": "玲",
-        "format-stopped": "玲",
-		// Commands to execute on events
-        "on-click": "mpc prev",
-    },
-    "mpd#3": {
-        "interval": 1,
-        "format": "{stateIcon}",
-        "format-disconnected": "",
-        "format-paused": "{stateIcon}",
-        "format-stopped": "",
-        "state-icons": {
-            "paused": "",
-            "playing": ""
-        },
-		// Commands to execute on events
-        "on-click": "mpc toggle",
-    },
-    "mpd#4": {
-        "format": "怜",
-        "format-disconnected": "怜",
-        "format-paused": "怜",
-        "format-stopped": "怜",
-		// Commands to execute on events
-        "on-click": "mpc next",
     },
 
 	// waybar-network
     "network": {
 		"interval": 5,
         //"interface": "wlan*", // (Optional) To force the use of this interface, set it for netspeed to work
-        "format-wifi": "直",
-        "format-ethernet": "",
-        "format-linked": "",
-        "format-disconnected": "睊",
-        "format-disabled": "睊",
+        "format-wifi": "󰖩",
+        "format-ethernet": "󰈀",
+        "format-linked": "LINKED",
+        "format-disconnected": "󰱟",
+        "format-disabled": "󰲜",
         "tooltip-format": " {ifname} via {gwaddr}",
         "on-click": "[[ ! `pidof nm-connection-editor` ]] && nm-connection-editor || pkill nm-connection-e",
     },
@@ -191,17 +145,17 @@
         //"format": "{volume}% {icon} {format_source}",
         "format": "{icon}",
         "format-muted": "",
-        "format-bluetooth": "",
-        "format-bluetooth-muted": "",
-        "format-source": "",
-        "format-source-muted": "",
+        "format-bluetooth": "󰗾",
+        "format-bluetooth-muted": "󰗿",
+        "format-source": "SOURCE",
+        "format-source-muted": "SOURCE-MUTED",
         "format-icons": {
-            "headphone": "",
-            "hands-free": "ﳌ",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
+            "headphone": "󰋋",
+            "hands-free": "HANDFREE",
+            "headset": "󰋎",
+            "phone": "",
+            "portable": "PORTABLE",
+            "car": "",
             "default": ["", "", ""]
         },
         "scroll-step": 5.0,
