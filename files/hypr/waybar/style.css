@@ -10,11 +10,11 @@
 
 /** ********** Waybar Window ********** **/
 window#waybar {
-    background-color: #0b0a10;
-		color: #f1fcf9;
-    transition-property: background-color;
-    transition-duration: .5s;
-    border-radius: 6px;
+	color: #f1fcf9;
+	background-color: rgba(11, 10, 16, 0.5);
+	transition-property: background-color;
+    	transition-duration: .5s;
+    	border-radius: 6px;
 }
 
 window#waybar.hidden {
