@@ -125,7 +125,7 @@
         "format-linked": "LINKED",
         "format-disconnected": "󰱟",
         "format-disabled": "󰲜",
-        "tooltip-format": " {ifname} via {gwaddr}",
+        "tooltip-format": "{ifname} via {gwaddr}",
         "on-click": "[[ ! `pidof nm-connection-editor` ]] && nm-connection-editor || pkill nm-connection-e",
     },
     "network#2": {
@@ -137,7 +137,7 @@
         "format-disconnected": "Disconnected",
         "format-disabled": "Disabled",
         "format-alt": " {bandwidthUpBits} |  {bandwidthDownBits}",
-        "tooltip-format": " {ifname} via {gwaddr}",
+        "tooltip-format": "{ifname} via {gwaddr}",
     },
 
 	// waybar-pulseaudio
