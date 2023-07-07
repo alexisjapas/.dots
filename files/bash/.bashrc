@@ -8,3 +8,6 @@ source ~/.bash_aliases
 # prompt
 source ~/.git-prompt.sh
 source ~/.al-prompt.sh
+
+# direnv
+eval "$(direnv hook bash)"

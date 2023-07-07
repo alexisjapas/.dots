@@ -5,60 +5,28 @@
 /** ********** Fonts ********** **/
 * {
     font-family: "JetBrains Mono", "Iosevka Nerd Font", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /** ********** Waybar Window ********** **/
 window#waybar {
 	color: #f1fcf9;
-	background-color: rgba(11, 10, 16, 0.7);
+	background-color: rgba(0, 0, 0, 0);
 	transition-property: background-color;
     	transition-duration: .5s;
-    	border-radius: 6px;
+    	border-radius: 0px;
 }
 
 window#waybar.hidden {
     opacity: 0.5;
 }
 
-/** ********** Custom ********** **/
-
-#custom-menu {
-	background-color: #343A40;
-	color: #B4A1DB;
-	font-size: 18px;
-	border-radius: 6px;
-	margin: 6px 6px 6px 6px;
-	padding: 2px 8px 2px 8px;
-}
-
-#custom-power {
-	background-color: #D04E9D;
-	color: #20262C;
-	font-size: 16px;
-	border-radius: 6px;
-	margin: 6px 6px 6px 0px;
-	padding: 2px 8px 2px 8px;
-}
-
-/** ********** Idle Inhibitor ********** **/
-#idle_inhibitor {
-	background-color: #4BC66D;
-	color: #343A40;
-	border-radius: 6px;
-	margin: 6px 6px 6px 0px ;
-	padding: 10px 10px;
-}
-#idle_inhibitor.deactivated {
-	background-color: #DB695B;
-}
-
 /** ********** Tray ********** **/
 #tray {
-	background-color: #15141f;
-	border-radius: 6px;
-	margin: 6px 6px 6px 0px ;
-	padding: 4px 6px;
+	background-color: rgba(27, 26, 38, 0.97);
+	border-radius: 0px 0px 0px 8px;
+	margin: 0px 0px 0px 0px;
+	padding: 4px 8px;
 }
 #tray > .passive {
     -gtk-icon-effect: dim;
@@ -155,31 +123,56 @@ window#waybar.hidden {
 /** ********** Common style ********** **/
 #backlight, 
 #battery,
-#clock,
 #cpu,
 #disk,
 #memory,
 #pulseaudio,
 #network {
-	background-color: #1b1a26;
-	border-radius: 6px 0px 0px 6px;
-	margin: 6px 0px 6px 0px ;
-	padding: 4px 6px;
+	background-color: rgba(27, 26, 38, 0.97);
+	border-radius: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px ;
+	padding: 4px 8px;
 }
+
+#clock {
+	background-color: rgba(27, 26, 38, 0.97);
+	border-radius: 0px 0px 0px 8px;
+	margin: 0px 0px 0px 0px ;
+	padding: 4px 8px;
+}
+
 
 #backlight.2, 
 #battery.2,
-#clock.2,
 #cpu.2,
-#disk.2,
 #memory.2,
 #pulseaudio.2,
 #network.2 {
-	background-color: #1b1a26;
+	background-color: rgba(27, 26, 38, 0.97);
 	color: #f1fcf9;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: bold;
-	border-radius: 0px 10px 10px 0px;
-	margin: 6px 6px 6px 0px ;
-	padding: 4px 6px;
+	border-radius: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px ;
+	padding: 4px 8px 4px 0px;
+}
+
+#clock.2 {
+	background-color: rgba(27, 26, 38, 0.97);
+	color: #f1fcf9;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 0px 0px 8px 0px;
+	margin: 0px 0px 0px 0px ;
+	padding: 4px 8px 4px 8px;
+}
+
+#disk.2 {
+	background-color: rgba(27, 26, 38, 0.97);
+	color: #f1fcf9;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 0px 0px 8px 0px;
+	margin: 0px 0px 0px 0px ;
+	padding: 4px 8px 4px 0px;
 }
