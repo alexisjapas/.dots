@@ -88,9 +88,7 @@ window#waybar.hidden {
         color: #f1fcf9;
     }
 }
-#battery.critical:not(.charging) {
-	background-color: #343A40;
-}
+#battery.critical:not(.charging),
 #battery.2.critical:not(.charging) {
 	background-color: #3E444A;
     color: #D66586;

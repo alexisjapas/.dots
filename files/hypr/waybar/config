@@ -21,7 +21,7 @@
     "ipc": true,            // Control waybar with `swaymsg bar` commands
 
     // Choose the order of the modules
-    "modules-left": [ "wlr/workspaces", "cpu", "cpu#2", "memory", "memory#2", "disk", "disk#2" ],
+    "modules-left": [ "hyprland/workspaces", "cpu", "cpu#2", "memory", "memory#2", "disk", "disk#2" ],
 
     "modules-center": [ "clock", "clock#2" ],
 
