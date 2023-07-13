@@ -9,15 +9,9 @@ alias ba="vim ~/.bash_aliases"
 alias vv="vim ~/.vimrc"
 alias ch="cd ~/.config/hypr ; vim ."
 alias dots="cd ~/.dots"
+alias nc="vim ~/.dots/files/nixos"
 
 # miscellaneous
 alias please="sudo"
 alias condac="conda activate"
 
-# projects specific
-alias cymoo="cd ~/code/cymoo ; source venv/bin/activate ; vim src"
-alias mys="cd ~/code/ing3_mystic-square ; source venv/bin/activate ; vim src"
-alias eco="cd ~/code/ecolution ; source venv/bin/activate"
-alias ecov="cd ~/code/ecolution ; source venv/bin/activate ; vim src"
-alias rec="cd ~/code/reconstrart ; source venv/bin/activate"
-alias recv="cd ~/code/reconstrart ; source venv/bin/activate ; vim src"
